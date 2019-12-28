@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkGrey;
+}
+
+form {
+  font-size: 20px;
+  width: 140px;
+  background-color: grey;
+  margin: auto;
+  padding: 10px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
+}
+
+button {
+  margin: auto;
+  margin-top: 20px;
+  font-size: inherit;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: inherit;
+}

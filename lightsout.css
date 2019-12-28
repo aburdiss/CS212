@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  background-image: linear-gradient(grey, white);
+  padding: 75px;
+  margin: auto;
+  letter-spacing: 0.2em;
+  font-size: 2.5em;
+}
+
+header > p {
+  font-size: 1.25em;
+  margin-bottom: 40px;
+}
+
+header button {
+  height: 1.75em;
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: inherit;
+  color: inherit;
+  vertical-align: top;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#the-game {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(5, 70px);
+  grid-template-rows: repeat(5, 70px);
+  grid-auto-flow: row;
+  justify-content: center;
+  margin: auto;
+}
+
+#the-game > div {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0px;
+  transition: background-color 0.3s linear;
+}
+
+.out {
+  background-color: grey;
+  transition: background-color 0.3s linear;
+}
+
+#stats-box {
+  display: inline-block;
+  width: 100px;
+  background-color: lightgrey;
+  height: 2.5em;
+  font-size: 1em;
+}
+
+#move-counter > p {
+  display: inline-block;
+  margin: 0;
+}
+
+#best-moves > p {
+  display: inline-block;
+  margin: 0;
+}

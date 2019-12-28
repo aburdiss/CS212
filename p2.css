@@ -1,0 +1,70 @@
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-areas:
+  'header header header header'
+  'nav main main div'
+  'footer footer footer footer';
+  grid-gap: 10px;
+}
+
+.grid-container > header {
+  grid-area: header;
+  padding: 20px;
+  text-align: center;
+  background-color: bisque;
+}
+
+.grid-container > nav {
+  grid-area: nav;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.grid-container > main {
+  grid-area: main;
+  padding: 20px;
+}
+
+header h2 {
+	color: DimGrey;
+}
+
+.grid-container > div {
+  border: solid;
+  border-color: DarkRed;
+  grid-area: div;
+  padding: 20px;
+  background-color: #ffcccc;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+#keyboard-title, #keyboard-price, #keyboard-description {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#ad-words {
+  color: red;
+}
+
+.grid-container > footer {
+  grid-area: footer;
+  padding: 20px;
+}
+
+div img {
+  max-width: 100%;
+  height: auto;
+}

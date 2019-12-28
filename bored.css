@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.suggestion {
+  background-color: lightgrey;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding: 20px;
+  height: 110px;
+}
+
+.textdiv {
+  text-align: center;
+  margin-top: 150px;
+  animation: textgrowth 3s linear, fade 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textgrowth {
+  0% {
+  font-size: 20px;
+  }
+  100% {
+  font-size: 40px;
+  }
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
